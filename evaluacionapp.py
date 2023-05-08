@@ -64,7 +64,7 @@ if uploaded_rubrica and uploaded_evidencia:
             response = openai.ChatCompletion.create(
                 model=model_engine,
                 messages=messages,
-                max_tokens=150,
+                max_tokens=900,
                 n=1,
                 stop=None,
                 temperature=0.8,
