@@ -56,7 +56,7 @@ if uploaded_rubrica and uploaded_evidencia:
         st.subheader("Resultado de GPT-4")
 
         if st.button("Enviar a GPT-4"):
-            model_engine = "GPT-4" # Reemplazar con el nombre del motor GPT-4 que desee utilizar
+            model_engine = "gpt-4" # Reemplazar con el nombre del motor GPT-4 que desee utilizar
             messages = [
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": f"{prompt}\n\nRubrica:\n{rubrica}\n\nEvidencia:\n{evidencia}"}
